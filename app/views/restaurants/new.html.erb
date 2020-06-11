@@ -1,9 +1,7 @@
 <%= simple_form_for(@restaurant) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_area :details %>
-  <%= f.label :completed %>
-  <%= f.check_box :completed %>
-  <%= f.submit %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :phone_number %>
+  <%= f.text_area :phone_number %>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
 <% end %>
